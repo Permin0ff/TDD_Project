@@ -8,19 +8,19 @@ class AddBookForm(forms.ModelForm):
         fields = "__all__"
 
         widgets = {
-            'title': forms.fields.TextInput(attrs={
+            'title': forms.TextInput(attrs={
                 'class': 'form-control'
             }),
-            'ISBN': forms.fields.TextInput(attrs={
+            'ISBN': forms.TextInput(attrs={
                 'class': 'form-control'
             }),
-            'author': forms.fields.TextInput(attrs={
+            'author': forms.TextInput(attrs={
                 'class': 'form-control'
             }),
-            'price': forms.fields.NumberInput(attrs={
+            'price': forms.NumberInput(attrs={
                 'class': 'form-control'
             }),
-            'availability': forms.fields.Select(attrs={
+            'availability': forms.Select(attrs={
                 'class': 'form-control'
             })
         }
