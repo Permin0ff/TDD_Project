@@ -79,7 +79,7 @@ class ElibraryURLsTest(TestCase):
 
     def test_root_url_resloves_to_homepage_view(self):
         found = resolve('/')
-        self.assertEquals(found.func, home)
+        self.assertEqual(found.func, home)
 
 
 class CatalogModelTests(TestCase):
@@ -98,7 +98,7 @@ class CatalogModelTests(TestCase):
         self.assertIsInstance(self.book, Catalog)
 
     def test_str_representation(self):
-        self.assertEquals(str(self.book), "First Django Book")
+        self.assertEqual(str(self.book), "First Django Book")
 
     def test_saving_and_retrieving_book(self):
         first_book = Catalog()
